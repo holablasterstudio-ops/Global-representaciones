@@ -166,6 +166,27 @@ Object.values(fields).forEach((field) => {
 const revealItems = document.querySelectorAll(".reveal");
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+const hero = document.querySelector(".hero");
+const heroMedia = document.querySelector(".hero-media");
+
+if (hero && heroMedia && !reduceMotion) {
+  let parallaxFrame = 0;
+
+  const updateHeroParallax = () => {
+    const heroTop = hero.getBoundingClientRect().top;
+    const shift = Math.min(Math.max(-heroTop * 0.11, 0), 48);
+    heroMedia.style.setProperty("--hero-parallax", `${shift}px`);
+    parallaxFrame = 0;
+  };
+
+  window.addEventListener("scroll", () => {
+    if (parallaxFrame) return;
+    parallaxFrame = window.requestAnimationFrame(updateHeroParallax);
+  }, { passive: true });
+
+  updateHeroParallax();
+}
+
 if (reduceMotion || !("IntersectionObserver" in window)) {
   revealItems.forEach((item) => item.classList.add("is-visible"));
 } else {
