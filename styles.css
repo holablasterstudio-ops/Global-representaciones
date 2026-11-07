@@ -1499,17 +1499,29 @@ h3 {
   }
 
   .hero-grid {
-    min-height: 660px;
-    align-items: end;
-    padding-block: 120px 68px;
+    min-height: 920px;
+    align-items: flex-start;
+    padding-block: clamp(420px, 66vw, 520px) 76px;
   }
 
   .hero-media {
-    inset: -3.5% 0;
+    inset: 0 0 auto;
+    height: clamp(350px, 58vw, 470px);
   }
 
   .hero-media img {
-    object-position: center 42%;
+    object-position: center 46%;
+  }
+
+  .hero-shade {
+    background: linear-gradient(
+      180deg,
+      rgba(2, 31, 86, 0.04) 0%,
+      rgba(2, 31, 86, 0.12) 35%,
+      rgba(2, 31, 86, 0.9) 51%,
+      var(--blue-950) 63%,
+      var(--blue-950) 100%
+    );
   }
 
   .hero-copy {
@@ -1653,18 +1665,23 @@ h3 {
   }
 
   .hero-media img {
-    object-position: 46% 42%;
+    object-position: center 46%;
   }
 
   .hero-shade {
-    background:
-      linear-gradient(0deg, rgba(2, 31, 86, 0.99) 0%, rgba(2, 31, 86, 0.9) 48%, rgba(2, 31, 86, 0.2) 86%),
-      linear-gradient(90deg, rgba(2, 31, 86, 0.58), rgba(2, 31, 86, 0.1));
+    background: linear-gradient(
+      180deg,
+      rgba(2, 31, 86, 0.02) 0%,
+      rgba(2, 31, 86, 0.12) 24%,
+      rgba(2, 31, 86, 0.94) 35%,
+      var(--blue-950) 44%,
+      var(--blue-950) 100%
+    );
   }
 
   .hero-grid {
-    min-height: 740px;
-    padding-block: 220px 104px;
+    min-height: 940px;
+    padding-block: 330px 82px;
   }
 
   h1 {
