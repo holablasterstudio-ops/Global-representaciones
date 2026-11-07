@@ -290,8 +290,10 @@ a {
 
 .hero-media {
   z-index: -2;
-  inset: -3.5% 0 -3.5% 42%;
+  inset: -3.5% 0 -3.5% 40%;
   background: #e8e4df;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.35) 7%, #000 18%);
+  mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.35) 7%, #000 18%);
   transform: translate3d(0, var(--hero-parallax, 0px), 0);
   will-change: transform;
 }
@@ -306,9 +308,7 @@ a {
 
 .hero-shade {
   z-index: -1;
-  background:
-    linear-gradient(90deg, rgba(2, 31, 86, 0.99) 0%, rgba(2, 31, 86, 0.95) 30%, rgba(2, 31, 86, 0.68) 42%, rgba(2, 31, 86, 0.14) 56%, rgba(2, 31, 86, 0.02) 72%),
-    linear-gradient(0deg, rgba(2, 31, 86, 0.68) 0%, transparent 44%);
+  background: linear-gradient(0deg, rgba(2, 31, 86, 0.62) 0%, transparent 42%);
 }
 
 .hero-grid {
@@ -1512,6 +1512,8 @@ h3 {
   .hero-media {
     inset: 0 0 auto;
     height: clamp(350px, 58vw, 470px);
+    -webkit-mask-image: none;
+    mask-image: none;
   }
 
   .hero-media img {
