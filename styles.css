@@ -321,7 +321,8 @@ a {
 }
 
 .hero-copy {
-  width: min(620px, 43vw);
+  width: min(600px, 43vw);
+  padding-right: clamp(20px, 2.4vw, 38px);
 }
 
 .hero-copy > * {
@@ -378,10 +379,10 @@ h1 span {
 }
 
 .hero h1 {
-  max-width: 700px;
+  max-width: 100%;
   margin-bottom: 20px;
   color: var(--white);
-  font-size: clamp(3rem, 5.7vw, 5.3rem);
+  font-size: clamp(3rem, 4.6vw, 4.65rem);
   line-height: 0.99;
   text-shadow: 0 2px 34px rgba(0, 12, 38, 0.2);
 }
@@ -405,7 +406,7 @@ h3 {
 }
 
 .hero-lede {
-  max-width: 650px;
+  max-width: 100%;
   margin: 0 0 32px;
   color: rgba(255, 255, 255, 0.88);
   font-size: clamp(1.03rem, 1.4vw, 1.2rem);
@@ -1523,6 +1524,7 @@ h3 {
 
   .hero-copy {
     width: min(620px, 100%);
+    padding-right: 0;
     text-align: left;
   }
 
