@@ -290,7 +290,7 @@ a {
 
 .hero-media {
   z-index: -2;
-  inset: clamp(24px, 3vw, 42px) clamp(20px, 3vw, 44px) clamp(24px, 3vw, 42px) 47%;
+  inset: clamp(24px, 3vw, 42px) clamp(20px, 3vw, 44px) clamp(24px, 3vw, 42px) 49%;
   overflow: hidden;
   background: #e8e4df;
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -321,7 +321,7 @@ a {
 }
 
 .hero-copy {
-  width: min(650px, 44vw);
+  width: min(620px, 43vw);
 }
 
 .hero-copy > * {
