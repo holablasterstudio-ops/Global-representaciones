@@ -290,7 +290,7 @@ a {
 
 .hero-media {
   z-index: -2;
-  inset: -3.5% 0 -3.5% 39%;
+  inset: -3.5% 0 -3.5% 42%;
   background: #e8e4df;
   transform: translate3d(0, var(--hero-parallax, 0px), 0);
   will-change: transform;
@@ -307,7 +307,7 @@ a {
 .hero-shade {
   z-index: -1;
   background:
-    linear-gradient(90deg, rgba(2, 31, 86, 0.99) 0%, rgba(2, 31, 86, 0.95) 30%, rgba(2, 31, 86, 0.74) 42%, rgba(2, 31, 86, 0.22) 56%, rgba(2, 31, 86, 0.03) 74%),
+    linear-gradient(90deg, rgba(2, 31, 86, 0.99) 0%, rgba(2, 31, 86, 0.95) 30%, rgba(2, 31, 86, 0.68) 42%, rgba(2, 31, 86, 0.14) 56%, rgba(2, 31, 86, 0.02) 72%),
     linear-gradient(0deg, rgba(2, 31, 86, 0.68) 0%, transparent 44%);
 }
 
