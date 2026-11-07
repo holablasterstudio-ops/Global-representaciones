@@ -290,7 +290,7 @@ a {
 
 .hero-media {
   z-index: -2;
-  inset: -3.5% 0 -3.5% 34%;
+  inset: -3.5% 0 -3.5% 39%;
   background: #e8e4df;
   transform: translate3d(0, var(--hero-parallax, 0px), 0);
   will-change: transform;
@@ -307,7 +307,7 @@ a {
 .hero-shade {
   z-index: -1;
   background:
-    linear-gradient(90deg, rgba(2, 31, 86, 0.99) 0%, rgba(2, 31, 86, 0.96) 29%, rgba(2, 31, 86, 0.82) 43%, rgba(2, 31, 86, 0.28) 62%, rgba(2, 31, 86, 0.04) 82%),
+    linear-gradient(90deg, rgba(2, 31, 86, 0.99) 0%, rgba(2, 31, 86, 0.95) 30%, rgba(2, 31, 86, 0.74) 42%, rgba(2, 31, 86, 0.22) 56%, rgba(2, 31, 86, 0.03) 74%),
     linear-gradient(0deg, rgba(2, 31, 86, 0.68) 0%, transparent 44%);
 }
 
@@ -819,6 +819,7 @@ h3 {
 }
 
 .brand-chip--dark {
+  position: relative;
   overflow: hidden;
   background: #1b1b1b;
   border-color: rgba(255, 255, 255, 0.18);
@@ -829,10 +830,14 @@ h3 {
 }
 
 .brand-chip--dark img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 150%;
   max-width: none;
   max-height: none;
   border-radius: 0;
+  transform: translate(-50%, -50%);
 }
 
 .section-territory {
