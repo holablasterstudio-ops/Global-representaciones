@@ -843,6 +843,12 @@ h3 {
   transform: translate(-50%, -50%);
 }
 
+.brand-chip--shimura img {
+  width: 100%;
+  max-width: none;
+  max-height: none;
+}
+
 .section-territory {
   overflow: hidden;
 }
@@ -1781,6 +1787,12 @@ h3 {
 
   .brand-chip--dark img {
     width: 145%;
+    max-width: none;
+    max-height: none;
+  }
+
+  .brand-chip--shimura img {
+    width: 100%;
     max-width: none;
     max-height: none;
   }
